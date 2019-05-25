@@ -4,10 +4,14 @@ Humidity thermometer adopts bme 280
 
 # gcp-project
 
+```
+cd gcp-project/
+```
+
 ### モジュールインストール
 
 ```
-pip install -r gcp-project/requirements.txt -t li
+pip install -r requirements.txt -t li
 ```
 
 ### デプロイ
