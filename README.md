@@ -1,4 +1,4 @@
-Humidity thermometer adopts bme 280
+湿度温度計はbme280を採用
 
 ![bme280](https://github.com/test-okome/sensor/blob/master/bme280.JPG "bme280")
 
