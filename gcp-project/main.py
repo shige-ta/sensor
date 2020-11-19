@@ -15,7 +15,6 @@ try:
 except (ImportError, AttributeError):
     pyarrow = None
 from google.appengine.ext import ndb
-logging.getLogger().setLevel(logging.DEBUG)
 
 
 class People(ndb.Model):
@@ -58,7 +57,7 @@ class MainPage(webapp2.RequestHandler):
         data = json.loads(self.request.body)
         image_name = self.request.get('image_name')
         
-        logging.info(data)
+        logging.debug(data)
         date = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
         d = People(Humidity=data["Humidity"],temperature=data["temperature"],pressure=data["pressure"], date=date,img=image_name)
         d.put()
